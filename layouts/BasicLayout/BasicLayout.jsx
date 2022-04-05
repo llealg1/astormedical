@@ -8,7 +8,7 @@ export default function BasicLayout(props) {
   return (
     <Container fluid className='basic-layout'>
       <Header />
-      <Container className='content'>
+      <Container fluid className='content m-0'>
         {children}
       </Container>
     </Container>
