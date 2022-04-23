@@ -1,14 +1,17 @@
 // Colors
-@import './colors.scss';
+@import "./colors.scss";
 
 // Layouts
-@import '../layouts/BasicLayout/BasicLayout.scss';
+@import "../layouts/BasicLayout/BasicLayout.scss";
 
 // Components
-  // Header
-  @import '../components/Header/Header.scss';
-  @import '../components/Header/TopBar/TopBar.scss';
-  @import '../components/Header/Nav/Nav.scss';
+// Header
+@import "../components/Header/Header.scss";
+@import "../components/Header/TopBar/TopBar.scss";
+@import "../components/Header/Nav/Nav.scss";
 
-  // Carousel
-  @import '../components/Carousel/Carousel.scss'
+// Carousel
+@import "../components/Carousel/Carousel.scss";
+
+// Footer
+@import "../components/Footer/Footer.scss";
