@@ -20,7 +20,7 @@ export default function Footer() {
             aspernatur! Temporibus, vel error?
           </p>
         </Col>
-        <Col className="contact">
+        <Col className="contact mx-auto">
           <h3>Contacto</h3>
           <p className="d-flex align-items-center">
             <FontAwesomeIcon icon={faMap} />

@@ -1,0 +1,19 @@
+.products {
+  margin-top: 20px;
+  .nav-link {
+    font-size: 20px;
+    color: $primary !important;
+    border: 2.5px solid $primary;
+    border-radius: 15px;
+    &:hover {
+      background-color: $primary !important;
+      color: #fff !important;
+
+      transition: background-color 0.7s linear;
+    }
+  }
+  .active {
+    background-color: $primary !important;
+    color: #fff !important;
+  }
+}

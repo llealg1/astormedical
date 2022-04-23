@@ -24,7 +24,7 @@ function Logo() {
   return (
     <Link href='/'>
       <a >
-        <Image src='/astormedic.png' alt='Astor Medical'/>
+        <Image src='/astormedic.png' alt='Astor Medical'size='tiny'/>
       </a>
     </Link>
   )
