@@ -3,10 +3,10 @@ import Image from 'react-bootstrap/Image'
 import Carousel  from 'react-bootstrap/Carousel'
 export default function CarouselMain() {
   
-  const arr = [1,2,3,4,5];
+  const arr = [0,1,2,3,4,5];
   return (
     <Container fluid className='p-0'  >
-      <Carousel className='carousel-box' variant="dark" >
+      <Carousel className='carousel-box'  >
         {
           arr.map( (act) => 
             <Carousel.Item className='fondo '>

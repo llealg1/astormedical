@@ -1,5 +1,18 @@
 .products {
   margin-top: 20px;
+
+  .card {
+    &:hover {
+      box-shadow: 0 10px 50px 0 rgba(128, 33, 110, 0.5);
+      -webkit-box-shadow: 0 1w0px 50px 0 rgba(128, 33, 110, 0.5);
+      -moz-box-shadow: 0 10px 50px 0 rgba(128, 33, 110, 0.5);
+      z-index: 1;
+      transition: all .5s ;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+
   .nav-link {
     font-size: 20px;
     color: $primary !important;
@@ -15,5 +28,12 @@
   .active {
     background-color: $primary !important;
     color: #fff !important;
+  }
+  
+  
+  @keyframes mymove {
+    50% {
+      box-shadow: 10px 10px 10px 10px $secondary;
+    }
   }
 }

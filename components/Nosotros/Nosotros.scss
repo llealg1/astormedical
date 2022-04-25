@@ -1,0 +1,19 @@
+.cardContent {
+  width: 18rem;
+  height: 32rem;
+  border:3px solid #4e0f59;
+  border-radius: 3%;
+  background-image: linear-gradient($aux1, $aux2, #fff);
+
+  .iconContent {
+    color: #fff
+  }
+
+  .card-title {
+    font-weight: bold !important;
+  }
+}
+
+.card-title {
+  font-weight: bold !important;
+}
