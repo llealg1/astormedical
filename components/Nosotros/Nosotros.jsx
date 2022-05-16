@@ -11,8 +11,8 @@ export default function Header() {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <FontAwesomeIcon icon={faArrowsRotate} style={{color:"$primary"}} />
-                  <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59' }}>
+                  <FontAwesomeIcon icon={faArrowsRotate} style={{color:"#4e0f59"}} />
+                  <Card className=" d-flex justify-content-center align-items-center " style={{ width: '18rem',color: '#4e0f59',border: '0px solid black' }}>
                     <FontAwesomeIcon icon={faHeart} className="iconContent" style={{ fontSize: "9rem"}}  size="lg" />
                     <Card.Body>
                       <Card.Title>Equipos Médicos</Card.Title>
@@ -30,8 +30,8 @@ export default function Header() {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <FontAwesomeIcon icon={faArrowsRotate} />
-                  <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59' }}>
+                  <FontAwesomeIcon icon={faArrowsRotate} style={{color:"#4e0f59"}}/>
+                  <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59', border: '0px solid black' }}>
                   <FontAwesomeIcon icon={faFlaskVial} className="iconContent" style={{ fontSize: "9rem",color: '#4e0f59' }}  size="lg"/>
                     <Card.Body>
                       <Card.Title>Insumos</Card.Title>
@@ -49,8 +49,8 @@ export default function Header() {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <FontAwesomeIcon icon={faArrowsRotate} />
-                  <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59' }}>
+                  <FontAwesomeIcon icon={faArrowsRotate} style={{color:"#4e0f59"}}/>
+                  <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59', border: '0px solid black' }}>
                     <FontAwesomeIcon icon={faGear} style={{ fontSize: "9rem",color: '#4e0f59' }}  size="lg" /> 
                     <Card.Body>
                       <Card.Title>Instrumentación <br /> y Accesorioss</Card.Title>
@@ -68,8 +68,8 @@ export default function Header() {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <FontAwesomeIcon icon={faArrowsRotate} />
-                  <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59' }}>
+                  <FontAwesomeIcon icon={faArrowsRotate} style={{color:"#4e0f59"}}/>
+                  <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59',border: '0px solid black' }}>
                     <FontAwesomeIcon icon={faWrench} style={{ fontSize: "9rem",color: '#4e0f59' }}  size="lg" />
                     <Card.Body>
                       <Card.Title>Laboratorio Técnicos</Card.Title>

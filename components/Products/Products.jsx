@@ -2,7 +2,34 @@ import { Container, Row, Col, Nav, Card, Button } from "react-bootstrap"
 
 export default function Products() {
 
-  const arr  = [1,2,3,4,5];
+  const arr  = [
+  {
+    id: 1,
+    type:'Endoscopia',
+    name:'Olympus Evis X-1'
+  },
+  {
+    id:2,
+    type:'Endoscopia',
+    name:'Sistema de endoscopia FujiFilm EPX-3500 HD'
+  },
+  {
+    id:3,
+    type:'Endoscopia',
+    name:'Olympus Evis Exera III CV-190'
+  }
+  ,
+  {
+    id:4,
+    type:'Endoscopia',
+    name:'Plataforma de Imagenología Evis Exera III.'
+  }
+  ,
+  {
+    id:5,
+    type:'Endoscopia',
+    name:'Olympus Videoscopio IPLEX GX/GT'
+  }];
   return (
     <Container fluid className="products mt-5" >
       <Row>
@@ -29,14 +56,13 @@ export default function Products() {
                 arr.map( act =>   
                   <Col sm={3}>
                     <Card style={{ width: '18rem',padding: '15px' }}>
-                      <Card.Img variant="top" src={`/works/${act}.webp`}/>
-                      <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                          Some quick example text to build on the card title and make up the bulk of
-                          the card's content.
+                      <Card.Img variant="top" src={`/works/${act.id}.webp`}/>
+                      <Card.Body className="d-flex flex-column justify-content-center align-items-center">
+                        <Card.Title>{act.type}</Card.Title>
+                        <Card.Text className="text-center aux">
+                          {act.name}
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Button variant="primary" className="botones">View more</Button>
                       </Card.Body>
                     </Card>
                   </Col>
