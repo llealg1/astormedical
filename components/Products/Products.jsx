@@ -1,5 +1,7 @@
 import { Container, Row, Col, Image, Card, Button,Modal } from "react-bootstrap"
 import {useState } from 'react'
+
+
 export default function Products() {
   
   const arr  = [
@@ -81,7 +83,7 @@ export default function Products() {
       <Row>
         <Col sm={12}>
           <Container fluid>
-            <Row className="d-flex justify-content-between">
+            <Row className="d-flex justify-content-around">
               {
                 arr.map( act =>   
                   <Col sm={3} className="mb-4 d-flex justify-content-center">

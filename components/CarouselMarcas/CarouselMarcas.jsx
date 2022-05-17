@@ -7,7 +7,7 @@ export default function CarouselMarcas() {
   return (
     <>
       <Container fluid>
-        <Carousel className=''  >
+        <Carousel interval={2000} className=''  >
           {
             arr.map( (act) => 
               <Carousel.Item className='fondo '>
