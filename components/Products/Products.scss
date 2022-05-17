@@ -1,3 +1,30 @@
+.sideBar {
+  height: 100%;
+  padding-left: 0px;
+  width: 90%;
+  background-color: $primary;
+  color: #fff;
+  border-radius: 20px  20px 20px 0 ;
+  .list-group {
+    .list-group-item {
+      background-color: $primary;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px;
+      border: 1px solid $primary;
+      
+    }
+
+    .active {
+      background-color: #fff !important;
+      color: $primary !important;
+    }
+  }
+
+
+}
+
 .products {
   margin-top: 20px;
 
@@ -11,10 +38,10 @@
       height: 50px;
     }
     &:hover {
-     // box-shadow: 0 10px 50px 0 rgba(128, 33, 110, 0.5);
+      box-shadow: 0 10px 50px 0 rgba(128, 33, 110, 0.5);
      // -webkit-box-shadow: 0 1w0px 50px 0 rgba(128, 33, 110, 0.5);
      // -moz-box-shadow: 0 10px 50px 0 rgba(128, 33, 110, 0.5);
-      z-index: 1;
+      z-index: 1000;
       transition: all .5s ;
       animation-direction: alternate;
       transform: scale(1.1);
@@ -49,4 +76,9 @@
       box-shadow: 10px 10px 10px 10px $secondary;
     }
   }
+}
+
+.active {
+  background-color: #fff !important;
+  color: $primary !important;
 }
