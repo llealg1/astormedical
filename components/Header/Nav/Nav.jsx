@@ -3,7 +3,7 @@ import { Container, NavDropdown, Nav as Nav1 } from "react-bootstrap";
 
 export default function Nav() {
   return (
-    <Navbar className="nav-bar" bg="light" expand="lg">
+    <Navbar className="nav-bar " bg="light" expand="lg">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

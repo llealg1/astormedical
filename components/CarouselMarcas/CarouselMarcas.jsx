@@ -19,7 +19,7 @@ export default function CarouselMarcas() {
                   />
                   <Image
                     className="d-block  "
-                    src={`/marcas/${ act+1 < 18?act+1: 9}.png`}
+                    src={`/marcas/${ act+1 < 18? act+1: 9}.png`}
                     alt="First slide"
                   />
                   <Image
@@ -57,9 +57,7 @@ export default function CarouselMarcas() {
                     src={`/marcas/${ act+8 <= 18?act+8: 1}.png`}
                     alt="First slide"
                   />
-                </div>
-          
-            
+                </div>  
               </Carousel.Item> 
             )
           }

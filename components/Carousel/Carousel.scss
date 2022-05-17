@@ -4,6 +4,7 @@
   
   .carousel-indicators{
     button {
+      margin-top: 15px !important;
       background-color: $primary !important;
       color:  $aux1 !important;
     }
@@ -36,8 +37,10 @@
       object-fit: cover;
       object-position: center center;
     }
+  }
 }
-}
+
+
 
 
 
