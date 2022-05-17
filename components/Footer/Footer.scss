@@ -1,114 +1,39 @@
 .footer {
-  background-color: $background-light;
-  border-top: 0.5rem solid $terceary;
-
-  .container-row {
-    padding-top: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+  background-color: $primary !important;
+  h3 {
+    color: $font-light;
   }
-
-  a {
-    color: $primary !important;
-    font-weight: 1000;
-    text-decoration: none;
-    font-size: 15px;
+  p {
+    color: $font-light;
+    font-size: 1.1em;
+    font-weight: 800;
+    transition: 0.5s;
   }
-
-  .about-us h3 {
-    color: $primary !important;
+  p:hover {
+    transform: translateX(5px);
   }
-
-  .about-us p {
-    font-size: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: justify;
-    color: $primary !important;
-    font-weight: 1000;
-  }
-
-  .contact h3 {
-    color: $primary !important;
-  }
-
-  // .contact a {
-  //   text
-  // }
-
-  .menu h3 {
-    color: $primary !important;
-  }
-
-  .social-networks h3 {
-    color: $primary !important;
-  }
-
-  .social-networks a {
-    margin-left: 10px;
-  }
-
-  .svg-inline--fa {
-    color: $primary !important;
-    font-size: 25px;
+  .about-us {
+    color: $font-light;
+    font-size: 1.1em;
+    font-weight: 800;
   }
 }
 
-$breakpoint-phone-m: 375px;
-@media (min-width: $breakpoint-phone-m) {
-  .footer {
-    .container-row {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-    .about-us {
-      padding: 1rem;
-    }
-    .contact {
-      padding: 1rem;
-    }
-    .contact p {
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-    .contact a {
-      margin-left: 10px;
-    }
-    .menu {
-      padding: 1rem;
-    }
-    .social-networks {
-      padding: 1rem;
-    }
+.social-icons {
+  a:hover {
+    transform: translateY(-3px);
+    transition: 0.5s;
   }
 }
 
-$breakpoint-phone-l: 425px;
-@media (min-width: $breakpoint-phone-l) {
-  .footer {
-    .container-row {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    .about-us {
-      padding: 1rem;
-    }
-    .contact {
-      padding: 2rem;
-    }
-    .contact p {
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-    .contact a {
-      margin-left: 10px;
-    }
-    .menu {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-    .social-networks {
-      padding: 2rem;
-    }
+$breakpoint-tablet: 425px;
+@media (min-width: $breakpoint-tablet) {
+  .social-icons {
+    margin-right: 0 !important;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px !important;
   }
 }
