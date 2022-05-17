@@ -26,8 +26,8 @@
   }
 }
 
-$breakpoint-tablet: 425px;
-@media (min-width: $breakpoint-tablet) {
+$breakpoint-phone: 425px;
+@media (max-width: $breakpoint-phone) {
   .social-icons {
     margin-right: 0 !important;
   }
