@@ -14,48 +14,10 @@ import {
 
 export default function Footer() {
   return (
-    <Container fluid className="mt-5 p-0">
+    <Container fluid className="mt-0 p-0">
       <footer className=" text-center text-lg-start bg-light">
         {/* Social media */}
-        <section className="d-flex social-network justify-content-center align-items-center justify-content-lg-between p-4">
-          {/* left */}
-          <div className="d-none fw-bold d-lg-block">
-            <span className="ms-5 fs-5">
-              Contacta con nosotros a través de nuestras redes sociales:
-            </span>
-          </div>
-          {/* left */}
-
-          {/* right */}
-          <div className="me-5 social-icons">
-            <a
-              class="btn btn-primary border-0 shadow-sm btn-floating fs-5 m-1"
-              href="#!"
-              style={{ backgroundColor: "#3b5998" }}
-              role="button"
-            >
-              <FontAwesomeIcon icon={faFacebook} />
-            </a>
-            <a
-              class="btn btn-primary border-0 shadow-sm btn-floating fs-5 m-1"
-              href="#!"
-              style={{ backgroundColor: "#C13584" }}
-              role="button"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a
-              class="btn btn-primary border-0 shadow-sm btn-floating fs-5 m-1"
-              href="https://api.whatsapp.com/send/?phone=584126036107&text&app_absent=0"
-              target={"_blank"}
-              style={{ backgroundColor: "#25D366" }}
-              role="button"
-            >
-              <FontAwesomeIcon icon={faWhatsapp} />
-            </a>
-          </div>
-          {/* right */}
-        </section>
+        
         {/* Social media */}
 
         {/* about */}

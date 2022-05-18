@@ -1,12 +1,11 @@
 .footer {
-  background-color: $primary !important;
+  background-color: $terceary !important;
   h3 {
     color: $font-light;
   }
   p {
     color: $font-light;
     font-size: 1.1em;
-    font-weight: 800;
     transition: 0.5s;
   }
   p:hover {
@@ -15,7 +14,7 @@
   .about-us {
     color: $font-light;
     font-size: 1.1em;
-    font-weight: 800;
+
   }
 }
 
