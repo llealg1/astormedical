@@ -1,5 +1,9 @@
 import { Container, Row, Col, Image, Card, Button,Modal } from "react-bootstrap"
 import {useState } from 'react'
+import { Form } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 export default function Products() {
   
   const arr  = [
@@ -75,16 +79,86 @@ export default function Products() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const arr1 = [
+    {
+      id:5,
+      name:"EIZO"
+    },
+    {
+      id:17,
+      name:"WELCH ALLYN"
+    },
+    ,
+    {
+      id:13,
+      name:"PENTAX"
+    },
+    {
+      id:2,
+      name:"BOSTON SCIENTIFIC "
+    },
+    ,
+    {
+      id:12,
+      name:"OLYMPUS"
+    },
+    ,
+    {
+      id:6,
+      name:"FUJINON"
+    },
+
+  ];
 
   return (
-    <Container fluid className="products mt-5" >
+    <Container fluid className="products" >
       <Row>
         <Col sm={12}>
-          <Container fluid>
-            <Row className="d-flex justify-content-between">
+          <Container fluid >
+            <div className="searcher d-flex justify-content-center px-5">
+              <div className="itemSearch d-flex align-items-center m-2 mb-0 mt-0">
+                  <Form.Check
+                    inline
+                    name="group1"
+                    type="radio"
+                    id={`inline-radio-1`}
+                  />
+                  <h2 className="m-0">Todos</h2>
+              </div>
+              {
+                arr1.map( act => 
+                <div className="itemSearch d-flex align-items-center justify-content-start m-2 mb-0 mt-0 mx-3 ">
+                  <Form.Check
+                    inline
+                    name="group1"
+                    type="radio"
+                    id={`inline-radio-1`}
+                  />
+                  
+                  <Image
+                      src={`/marcas/${act.id}.png`}
+                      alt="First slide"
+                      width="100%"
+                      height="100%"
+                    />
+                </div>)
+              }
+              <div className="d-flex align-items-center">
+                <Form.Label className="m-0" htmlFor="inputPassword5">
+                <FontAwesomeIcon className="m-0 mx-2 searchIcon" icon={faMagnifyingGlass}/>
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  id="inputPassword5"
+                  aria-describedby="passwordHelpBlock"
+                  autoComplete="false"
+                />
+              </div>
+            </div>
+            <Row className="d-flex justify-content-around">
               {
                 arr.map( act =>   
-                  <Col sm={3} className="mb-4 d-flex justify-content-center">
+                  <Col sm={3} className="mb-4 d-flex justify-content-center p-0">
                     <Card onClick={()=> {setData(act);handleShow();}} style={{ width: '18rem',padding: '15px' }}>
                       <Card.Img variant="top" src={`/works/${act.id}.webp`}/>
                       <Card.Body className="d-flex flex-column justify-content-center align-items-center">

@@ -6,7 +6,7 @@ export default function CarouselMain() {
   const arr = [0,1,2,3,4,5];
   return (
     <Container fluid className='p-0'  >
-      <Carousel className='carousel-box'  >
+      <Carousel className='carousel-box' interval={4000} >
         {
           arr.map( (act) => 
             <Carousel.Item className='fondo '>

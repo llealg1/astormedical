@@ -1,3 +1,30 @@
+.searcher {
+  //padding: 0 100px 0 100px;
+  .searchIcon{
+    color: $primary;
+    font-size: 1.5rem;
+    margin-top: 6px !important;
+  }
+}
+
+.form-check-inline {
+  display: inline-block;
+  margin-right: 0rem;
+}
+.form-check-input{
+  width: 1.5em;
+  height: 1.5em;
+
+  transition: all 0.3s linear;
+
+}
+.form-check-input:checked {
+  background-color: $primary !important;
+  border-color: $secondary !important;
+  box-shadow: 0 0 0 0.25rem rgba(151, 20, 140, 0.25);
+
+}
+
 .sideBar {
   height: 100%;
   padding-left: 0px;
@@ -26,7 +53,6 @@
 }
 
 .products {
-  margin-top: 20px;
 
   .card {
     .botones {
@@ -81,4 +107,13 @@
 .active {
   background-color: #fff !important;
   color: $primary !important;
+}
+
+.btn-close{
+  color: $primary !important;
+}
+
+.efe {
+  background-color: $primary;
+  color: white;
 }
