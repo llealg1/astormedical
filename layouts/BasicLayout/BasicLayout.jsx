@@ -9,6 +9,8 @@ export default function BasicLayout(props) {
     <>
       <Head>
         <title>Astor Medical</title>
+        <link  rel="icon"   href="/logo.png" type="image/png" /> 
+
       </Head>
       <Header />
       <Container fluid className='basic-layout aboutMe'>
