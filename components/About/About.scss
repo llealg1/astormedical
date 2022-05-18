@@ -1,11 +1,37 @@
 .title {
-  font-size: 35px;
+  font-size: 4rem;
 }
-
+.gelp {
+  background-color: $primary;
+  color: #fff;
+}
 .parrafo  {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
-img {
-  //border-radius: 0 20px 20px 0px;
+.text-muted{
+  font-size: 1.5rem;
 }
+.teamTitle{
+  font-size: 3.8rem !important;
+}
+.teamImg{
+  transform: scaleX(-1);
+}
+ 
+.aboutMe{
+
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

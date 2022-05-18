@@ -4,75 +4,168 @@ import { Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
+const dataImportante = [
+  {
+    id: 1,
+    type:'Endoscopia',
+    name:'Olympus Evis X-1',
+    marca: 'OLYMPUS'
+  },
+  {
+    id:2,
+    type:'Endoscopia',
+    name:'Sistema de endoscopia FujiFilm EPX-3500 HD',
+    marca: 'FUJIFILM'
+  },
+  {
+    id:3,
+    type:'Endoscopia',
+    name:'Olympus Evis Exera III CV-190',
+    marca: 'OLYMPUS'
+  }
+  ,
+  {
+    id:4,
+    type:'Endoscopia',
+    name:'Plataforma de Imagenología Evis Exera III.',
+    marca:'elvis'
+  }
+  ,
+  {
+    id:5,
+    type:'Endoscopia',
+    name:'Olympus Videoscopio IPLEX GX/GT',
+    marca: 'OLYMPUS'
+  }
+  ,
+  {
+    id:6,
+    type:'Endoscopia',
+    name:'Gastroscopio USB',
+    marca: 'GENERICO'
+  },
+  {
+    id:7,
+    type:'Endoscopia',
+    name:'Colonoscopio EVC 21-37L',
+    marca: 'EVC'
+  },
+  {
+    id:8,
+    type:'Endoscopia',
+    name:'Sistema de videoendoscopia Fujinon EPX-2500',
+    marca: 'FUJINON'
+  },
+  {
+    id:9,
+    type:'Endoscopia',
+    name:'Fujifilm Bomba de Agua JW-2',
+    marca: 'FUJIFILM'
+
+  },
+  {
+    id:10,
+    type:'Endoscopia',
+    name:'Videogastroscopio ultrasónico EUS J-10 Line up Pentax Medical',
+    marca:'PENTAX'
+  },
+  {
+    id:11,
+    type:'Endoscopia',
+    name:'Monitor de Endoscopia OEV 261-H Olympus',
+    marca: 'OLYMPUS'
+  },
+  {
+    id:12,
+    type:'Endoscopia',
+    name:'Unidad de Regulación CO2 (UCR) Olympus',
+    marca: 'OLYMPUS'
+  },
+
+]
+
 export default function Products() {
   
-  const arr  = [
+  const [arr, setArr] = useState([
     {
       id: 1,
       type:'Endoscopia',
-      name:'Olympus Evis X-1'
+      name:'Olympus Evis X-1',
+      marca: 'OLYMPUS'
     },
     {
       id:2,
       type:'Endoscopia',
-      name:'Sistema de endoscopia FujiFilm EPX-3500 HD'
+      name:'Sistema de endoscopia FujiFilm EPX-3500 HD',
+      marca: 'FUJIFILM'
     },
     {
       id:3,
       type:'Endoscopia',
-      name:'Olympus Evis Exera III CV-190'
+      name:'Olympus Evis Exera III CV-190',
+      marca: 'OLYMPUS'
     }
     ,
     {
       id:4,
       type:'Endoscopia',
-      name:'Plataforma de Imagenología Evis Exera III.'
+      name:'Plataforma de Imagenología Evis Exera III.',
+      marca:'elvis'
     }
     ,
     {
       id:5,
       type:'Endoscopia',
-      name:'Olympus Videoscopio IPLEX GX/GT'
+      name:'Olympus Videoscopio IPLEX GX/GT',
+      marca: 'OLYMPUS'
     }
     ,
     {
       id:6,
       type:'Endoscopia',
-      name:'Gastroscopio USB'
+      name:'Gastroscopio USB',
+      marca: 'GENERICO'
     },
     {
       id:7,
       type:'Endoscopia',
-      name:'Colonoscopio EVC 21-37L'
+      name:'Colonoscopio EVC 21-37L',
+      marca: 'EVC'
     },
     {
       id:8,
       type:'Endoscopia',
-      name:'Sistema de videoendoscopia Fujinon EPX-2500'
+      name:'Sistema de videoendoscopia Fujinon EPX-2500',
+      marca: 'FUJINON'
     },
     {
       id:9,
       type:'Endoscopia',
-      name:'Fujifilm Bomba de Agua JW-2'
+      name:'Fujifilm Bomba de Agua JW-2',
+      marca: 'FUJIFILM'
+
     },
     {
       id:10,
       type:'Endoscopia',
-      name:'Videogastroscopio ultrasónico EUS J-10 Line up Pentax Medical'
+      name:'Videogastroscopio ultrasónico EUS J-10 Line up Pentax Medical',
+      marca:'PENTAX'
     },
     {
       id:11,
       type:'Endoscopia',
-      name:'Monitor de Endoscopia OEV 261-H Olympus'
+      name:'Monitor de Endoscopia OEV 261-H Olympus',
+      marca: 'OLYMPUS'
     },
     {
       id:12,
       type:'Endoscopia',
-      name:'Unidad de Regulación CO2 (UCR) Olympus'
+      name:'Unidad de Regulación CO2 (UCR) Olympus',
+      marca: 'OLYMPUS'
     },
   
-  ];
-    
+  ]);
+  
   const [data, setData] = useState({
     
   });
@@ -110,6 +203,16 @@ export default function Products() {
 
   ];
 
+  const handleSearch = ( texto ) => {
+
+    setArr( dataImportante.filter( item => item.marca == texto ))
+  }
+  
+  const handleAll = (  ) => {
+
+    setArr( dataImportante)
+  }
+  
   return (
     <Container fluid className="products" >
       <Row>
@@ -118,6 +221,7 @@ export default function Products() {
             <div className="searcher d-flex justify-content-center px-5">
               <div className="itemSearch d-flex align-items-center m-2 mb-0 mt-0">
                   <Form.Check
+                    onClick={handleAll}
                     inline
                     name="group1"
                     type="radio"
@@ -127,20 +231,23 @@ export default function Products() {
               </div>
               {
                 arr1.map( act => 
-                <div className="itemSearch d-flex align-items-center justify-content-start m-2 mb-0 mt-0 mx-3 ">
+                <div className="itemSearch d-flex align-items-center justify-content-start m-2 mb-0 mt-0 mx-4 cursor-pointer">
                   <Form.Check
+                    onClick={ ()=> handleSearch(act.name)}
                     inline
                     name="group1"
                     type="radio"
-                    id={`inline-radio-1`}
+                    id={`inline-radio-${act.id}`}
                   />
-                  
-                  <Image
+                  <label for={`inline-radio-${act.id}`}>
+                    <Image
                       src={`/marcas/${act.id}.png`}
                       alt="First slide"
                       width="100%"
                       height="100%"
                     />
+                  </label>
+              
                 </div>)
               }
               <div className="d-flex align-items-center">
@@ -155,10 +262,10 @@ export default function Products() {
                 />
               </div>
             </div>
-            <Row className="d-flex justify-content-around">
+            <Row className="d-flex justify-content-around productItem">
               {
                 arr.map( act =>   
-                  <Col sm={3} className="mb-4 d-flex justify-content-center p-0">
+                  <Col sm={3} className="mb-4 d-flex justify-content-center p-0 productItem">
                     <Card onClick={()=> {setData(act);handleShow();}} style={{ width: '18rem',padding: '15px' }}>
                       <Card.Img variant="top" src={`/works/${act.id}.webp`}/>
                       <Card.Body className="d-flex flex-column justify-content-center align-items-center">
@@ -187,7 +294,7 @@ export default function Products() {
 
 const ModalEspect = ({show,handleClose,data})=> {
   return (
-    <Modal show={show} onHide={handleClose}    size="lg"
+    <Modal show={show} onHide={handleClose}    size="md"
     aria-labelledby="contained-modal-title-vcenter"
     centered>
       <Modal.Header closeButton>
