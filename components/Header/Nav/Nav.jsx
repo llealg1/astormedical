@@ -11,23 +11,23 @@ export default function Nav() {
           <Nav1 className="me-auto">
             <Nav1.Link className="p-0 mx-3 d-flex align-items-center" >
               <Link href="/">
-              <a>Inicio</a>
+              <p>Inicio</p>
               </Link>
             </Nav1.Link>
             <Nav1.Link  className="p-0 mx-3 d-flex align-items-center" >
               <Link href="/nosotros">
-              <a>Nosotros</a>
+              <p>Nosotros</p>
               </Link>
             </Nav1.Link>
             <Nav1.Link  className="p-0 mx-3 d-flex align-items-center" >
               <Link href="/productos">
-                <a >Productos</a>
+                <p>Productos</p>
               </Link>
           
             </Nav1.Link>
             <Nav1.Link  className="p-0 mx-3 d-flex align-items-center">
               <Link href="/contacto">
-                <a>Contacto</a>
+                <p>Contacto</p>
               </Link>
             </Nav1.Link>
           </Nav1>
