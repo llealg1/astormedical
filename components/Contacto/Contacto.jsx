@@ -3,8 +3,15 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 export default function Contacto(){
   return (
     <>
-      <Container fluid className="mt-5 mb-5">
+      <Container fluid className=" mb-5">
         <Row>
+        <Col sm={12} className="temazo p-0 mb-4" >
+            
+            <div className="aboutImg2 d-flex align-items-center justify-content-center"> 
+              <h2 className="title4">Contacto</h2>
+
+            </div>
+          </Col>
           <Col sm={5} className="p-5">
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">

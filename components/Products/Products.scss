@@ -1,3 +1,12 @@
+.aboutImg1 {
+
+  background-image: url('/slides/4.webp');
+  z-index: -1;
+  opacity: .5;
+  height: 400px;
+
+}
+
 .searcher {
   height: 8.7rem !important;
   //padding: 0 100px 0 100px;
@@ -143,3 +152,4 @@
   background-color: $primary;
   color: white;
 }
+

@@ -216,8 +216,16 @@ export default function Products() {
   return (
     <Container fluid className="products" >
       <Row>
+      <Col sm={12} className="temazo p-0" >
+            
+            <div className="aboutImg1 d-flex align-items-center justify-content-center"> 
+              <h2 className="title3"></h2>
+
+            </div>
+          </Col>
         <Col sm={12}>
           <Container fluid >
+        
             <div className="searcher d-flex justify-content-center px-5">
               <div className="itemSearch d-flex align-items-center m-2 mb-0 mt-0">
                   <Form.Check

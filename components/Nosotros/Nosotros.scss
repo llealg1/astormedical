@@ -69,11 +69,14 @@
   button {
     background-color: $primary;
     border: #4e0f59;
+    &:hover {
+      background-color: $secondary;
+    }
   }
   
   p {
     color: $primary;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
   }
 }

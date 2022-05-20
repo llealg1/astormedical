@@ -3,9 +3,9 @@ import Image from 'react-bootstrap/Image'
 import Carousel  from 'react-bootstrap/Carousel'
 export default function CarouselMain() {
   
-  const arr = [0,1,2,3,4,5];
+  const arr = [0,1,2,3,4];
   return (
-    <Container fluid className='p-0'  >
+    <Container fluid className='p-0' id="carou" >
       <Carousel className='carousel-box' interval={4000} >
         {
           arr.map( (act) => 

@@ -13,7 +13,7 @@ export default function Header() {
                 <div className="flip-card-front">
                   <FontAwesomeIcon icon={faArrowsRotate} style={{color:"#4e0f59"}} />
                   <Card className=" d-flex justify-content-center align-items-center " style={{ width: '18rem',color: '#4e0f59',border: '0px solid black' }}>
-                    <FontAwesomeIcon icon={faHeart} className="iconContent" style={{ fontSize: "9rem"}}  size="lg" />
+                    <FontAwesomeIcon icon={faHeart} className="iconContent" style={{ fontSize: "6rem"}}  size="lg" />
                     <Card.Body>
                       <Card.Title>Equipos Médicos</Card.Title>
                     </Card.Body>
@@ -32,7 +32,7 @@ export default function Header() {
                 <div className="flip-card-front">
                   <FontAwesomeIcon icon={faArrowsRotate} style={{color:"#4e0f59"}}/>
                   <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59', border: '0px solid black' }}>
-                  <FontAwesomeIcon icon={faFlaskVial} className="iconContent" style={{ fontSize: "9rem",color: '#4e0f59' }}  size="lg"/>
+                  <FontAwesomeIcon icon={faFlaskVial} className="iconContent" style={{ fontSize: "6rem",color: '#4e0f59' }}  size="lg"/>
                     <Card.Body>
                       <Card.Title>Insumos</Card.Title>
                     </Card.Body>
@@ -51,7 +51,7 @@ export default function Header() {
                 <div className="flip-card-front">
                   <FontAwesomeIcon icon={faArrowsRotate} style={{color:"#4e0f59"}}/>
                   <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59', border: '0px solid black' }}>
-                    <FontAwesomeIcon icon={faGear} style={{ fontSize: "9rem",color: '#4e0f59' }}  size="lg" /> 
+                    <FontAwesomeIcon icon={faGear} style={{ fontSize: "6rem",color: '#4e0f59' }}  size="lg" /> 
                     <Card.Body>
                       <Card.Title>Instrumentación <br /> y Accesorioss</Card.Title>
                     </Card.Body>
@@ -70,7 +70,7 @@ export default function Header() {
                 <div className="flip-card-front">
                   <FontAwesomeIcon icon={faArrowsRotate} style={{color:"#4e0f59"}}/>
                   <Card className=" d-flex justify-content-center align-items-center" style={{ width: '18rem',color: '#4e0f59',border: '0px solid black' }}>
-                    <FontAwesomeIcon icon={faWrench} style={{ fontSize: "9rem",color: '#4e0f59' }}  size="lg" />
+                    <FontAwesomeIcon icon={faWrench} style={{ fontSize: "6rem",color: '#4e0f59' }}  size="lg" />
                     <Card.Body>
                       <Card.Title>Laboratorio Técnicos</Card.Title>
                     </Card.Body>
