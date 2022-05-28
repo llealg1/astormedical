@@ -1,0 +1,42 @@
+
+  .infoBox {
+    height: 35px;
+    width: 100%;
+    background-color: $primary;
+    color: #fff;
+    font-weight: bold;
+
+    .row {
+      width: 100%;
+    }
+
+  }
+
+.header-main {
+  height: 75px;
+  width: 100%;
+  position: relative;
+  //sbox-shadow: 0 -10px 10px 15px rgba(128, 33, 110, 0.5);
+  //-webkit-box-shadow: 0 1px 5px 10px rgba(128, 33, 110, 0.5);
+  //`-moz-box-shadow: 0 -10px 10px 15px rgba(128, 33, 110, 0.5);
+  z-index: 1;
+  //animation: mymove 5s infinite;
+
+}
+
+.box {
+  --angle: 0deg;
+  width: 20vmin;
+  height: 30vmin;
+  border: 0.45rem solid;
+  border-image: linear-gradient(var(--angle), #00cc99, #eef8f5, #6600ff) 30
+    round;
+  border-image-slice: 15%;
+  //animation: 5s rotate linear infinite;
+}
+
+@keyframes mymove {
+  50% {
+    box-shadow: 5px 15px 20px $secondary;
+  }
+}

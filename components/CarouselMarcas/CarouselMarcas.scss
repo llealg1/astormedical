@@ -1,0 +1,43 @@
+.carousel-control-prev-icon {
+  background-color: $aux1 !important;
+  color: $primary !important;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  padding: 16px !important;
+  margin-right: 50px;
+}
+
+.carousel-control-next-icon {
+  background-color: $aux1 !important;
+  border-radius: 50%;
+  font-size: 20px !important;
+  width: 5px;
+  height: 5px;
+  padding: 16px !important;;
+  margin-left: 50px;
+}
+
+.title5 {
+  color: $secondary !important
+
+}
+
+.aboutImg3 {
+
+  background-image: url('/service2.webp');
+  background-size: cover;
+  z-index: -1;
+  opacity: .5;
+  height: 400px;
+}
+
+.help3 {
+  h2 {
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  color: $primary;
+}

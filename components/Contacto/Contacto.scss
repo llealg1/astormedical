@@ -1,0 +1,44 @@
+.aboutImg2 {
+
+  background-image: url('/slides/3.webp');
+  z-index: -1;
+  opacity: .5;
+  height: 400px;
+
+}
+
+.teamImg1 {
+  border-radius: 20px 0px 0px 20px;
+}
+.labelForm {
+  font-size: 2rem;
+  color: $primary;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: rgba(124, 6, 114, 0.25);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(124, 6, 114, 0.25);
+}
+
+.buttonSubmit{
+  background-color: $primary !important;
+  border-color: $primary !important;
+  width:8rem;
+  height: 3rem;
+  &:focus{
+    box-shadow: 0 0 0 0.25rem rgba(124, 6, 114, 0.25);
+  }
+}
+
+.title4 {
+    font-size: 4rem;
+    color: white;
+    opacity: 1 !important;
+    z-index: 100 !important;
+    
+}

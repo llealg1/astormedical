@@ -1,0 +1,38 @@
+.footer {
+  background-color: $terceary !important;
+  h3 {
+    color: $font-light;
+  }
+  p {
+    color: $font-light;
+    font-size: 1.1em;
+    transition: 0.5s;
+  }
+  p:hover {
+    transform: translateX(5px);
+  }
+  .about-us {
+    color: $font-light;
+    font-size: 1.1em;
+
+  }
+}
+
+.social-icons {
+  a:hover {
+    transform: translateY(-3px);
+    transition: 0.5s;
+  }
+}
+
+$breakpoint-phone: 425px;
+@media (max-width: $breakpoint-phone) {
+  .social-icons {
+    margin-right: 0 !important;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px !important;
+  }
+}

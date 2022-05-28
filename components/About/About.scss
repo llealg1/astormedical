@@ -1,0 +1,54 @@
+.title3 {
+  font-size: 4rem;
+  color: $primary;
+  opacity: 1 !important;
+  
+}
+.gelp {
+  background-color: $primary;
+  color: #fff;
+}
+.parrafo  {
+  font-size: 1.5rem;
+}
+
+.text-muted{
+  font-size: 1.5rem;
+}
+.teamTitle{
+  font-size: 3.8rem !important;
+}
+.teamImg{
+  transform: scaleX(-1);
+}
+ 
+.temazo{
+  background-color: $font-dark;
+}
+.aboutImg {
+
+  background-image: url('/slides/1.webp');
+  z-index: -1;
+  opacity: .5;
+  height: 400px;
+
+}
+  .aboutMe{
+
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.imgPerfect {
+  width: 500px !important;
+}

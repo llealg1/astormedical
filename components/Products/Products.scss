@@ -1,0 +1,155 @@
+.aboutImg1 {
+
+  background-image: url('/slides/4.webp');
+  z-index: -1;
+  opacity: .5;
+  height: 400px;
+
+}
+
+.searcher {
+  height: 8.7rem !important;
+  //padding: 0 100px 0 100px;
+
+
+  .searchIcon{
+    color: $primary;
+    font-size: 1.5rem;
+    margin-top: 6px !important;
+  }
+  .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: rgba(124, 6, 114, 0.25);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(124, 6, 114, 0.25);
+}
+}
+
+.productItem {
+
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.form-check-inline {
+  display: inline-block;
+  margin-right: 0rem;
+}
+.form-check-input{
+  width: 1.5em;
+  height: 1.5em;
+
+  transition: all 0.3s linear;
+
+}
+.form-check-input:checked {
+  background-color: $primary !important;
+  border-color: $secondary !important;
+  box-shadow: 0 0 0 0.25rem rgba(151, 20, 140, 0.25);
+
+}
+
+.sideBar {
+  height: 100%;
+  padding-left: 0px;
+  width: 90%;
+  background-color: $primary;
+  color: #fff;
+  border-radius: 20px  20px 20px 0 ;
+  .list-group {
+    .list-group-item {
+      background-color: $primary;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px;
+      border: 1px solid $primary;
+      
+    }
+
+    .active {
+      background-color: #fff !important;
+      color: $primary !important;
+    }
+  }
+
+
+}
+
+.products {
+  min-height: 80%;
+  .card {
+    .botones {
+      background: $primary;
+      color: white;
+      border-color: $secondary;
+    }
+    .aux {
+      height: 50px;
+    }
+    &:hover {
+      box-shadow: 0 10px 50px 0 rgba(128, 33, 110, 0.5);
+     // -webkit-box-shadow: 0 1w0px 50px 0 rgba(128, 33, 110, 0.5);
+     // -moz-box-shadow: 0 10px 50px 0 rgba(128, 33, 110, 0.5);
+      z-index: 1000;
+      transition: all .5s ;
+      animation-direction: alternate;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    z-index: 1;
+    transition: all .5s ;
+    animation-direction: alternate;
+    transform: scale(1);
+  }
+
+  .nav-link {
+    font-size: 20px;
+    color: $primary !important;
+    border: 0px solid $primary;
+    border-radius: 15px;
+    &:hover {
+      background-color: $primary !important;
+      color: #fff !important;
+
+      transition: background-color 1s linear;
+    }
+  }
+  .active {
+    background-color: $primary !important;
+    color: #fff !important;
+  }
+  
+  
+  @keyframes mymove {
+    50% {
+      box-shadow: 10px 10px 10px 10px $secondary;
+    }
+  }
+}
+
+.active {
+  background-color: #fff !important;
+  color: $primary !important;
+}
+
+.btn-close{
+  color: $primary !important;
+}
+
+.efe {
+  background-color: $primary;
+  color: white;
+}
+

@@ -1,0 +1,33 @@
+// Colors
+@import "./colors.scss";
+
+// Layouts
+@import "../layouts/BasicLayout/BasicLayout.scss";
+
+// Components
+// Header
+@import "../components/Header/Header.scss";
+@import "../components/Header/TopBar/TopBar.scss";
+@import "../components/Header/Nav/Nav.scss";
+
+// Carousel
+@import "../components/Carousel/Carousel.scss";
+
+// Footer
+@import "../components/Footer/Footer.scss";
+
+
+//Products
+@import "../components/Products/Products.scss";
+
+//Nosotros
+@import "../components/Nosotros/Nosotros.scss";
+
+//Carousel Marcas
+@import "../components/CarouselMarcas/CarouselMarcas.scss";
+
+//Contacto 
+@import "../components/Contacto/Contacto.scss";
+
+//About 
+@import "../components/About/About.scss"
