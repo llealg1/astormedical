@@ -6,14 +6,11 @@ import Nosotros from "../components/Nosotros";
 import CarouselMarcas from "../components/CarouselMarcas";
 import About from "../components/About";
 
-
-
-export default function Productos()  {
+export default function Productos() {
   return (
     <BasicLayout>
       <Products />
       <Footer />
     </BasicLayout>
-  )
+  );
 }
-
