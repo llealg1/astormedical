@@ -1,8 +1,11 @@
 import { Navbar } from "react-bootstrap";
 import { Container, NavDropdown, Nav as Nav1 } from "react-bootstrap";
 import Link from 'next/link'
+import { useRouter } from "next/router";
 
 export default function Nav() {
+  const router = useRouter();
+  console.log(router.pathname);
   return (
     <Navbar className="nav-bar" expand="lg">
       <Container>
@@ -10,7 +13,7 @@ export default function Nav() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav1 className="me-auto">
           
-              <Link href="/">
+              <Link className={router.pathname == "/" ? "selected" : ""} href="/">
               <a>Inicio</a>
               </Link>
 
@@ -20,7 +23,7 @@ export default function Nav() {
               </Link>
         
               <Link href="/productos">
-                <a>Contactos</a>
+                <a>Productos</a>
               </Link>
           
               <Link href="/contacto">
