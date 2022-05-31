@@ -132,7 +132,7 @@ export default function About() {
               width={400}
               height={400}
             />
-            <div className="text-center d-flex flex-column justify-content-center align-items-center">
+            <div className="text-center d-flex flex-column justify-content-center p-4">
               <h2 className="teamtitle3">Josebelys <br/> Bastidas</h2>
               <span className="text-muted">Directora Comercial</span>
               <FontAwesomeIcon
