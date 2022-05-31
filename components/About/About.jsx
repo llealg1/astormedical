@@ -20,7 +20,6 @@ export default function About() {
         <Row className="m-0 p-0">
           <Col sm={12} className="temazo p-0">
             <div className="aboutImg d-flex align-items-center justify-content-center">
-              <h2 className="title3">Nosotros</h2>
             </div>
           </Col>
           <Col sm={6} className="d-flex justify-content-center p-0">
@@ -125,7 +124,7 @@ export default function About() {
               </p>
             </div>
           </Col>
-          <Col sm={6} className="d-flex justify-content-between  pt-4 px-0">
+          <Col sm={6} className=" d-flex justify-content-between  pt-4 px-0">
             <Image
               src="/team2.jpg"
               className="teamImg"
@@ -134,7 +133,7 @@ export default function About() {
               height={400}
             />
             <div className="text-center d-flex flex-column justify-content-center align-items-center">
-              <h2 className="teamtitle3">Josebelys Bastidas</h2>
+              <h2 className="teamtitle3">Josebelys <br/> Bastidas</h2>
               <span className="text-muted">Directora Comercial</span>
               <FontAwesomeIcon
                 icon={faEarthAmerica}

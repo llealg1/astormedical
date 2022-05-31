@@ -7,7 +7,7 @@ export default function Contacto() {
         <Row>
           <Col sm={12} className="temazo p-0 mb-4">
             <div className="aboutImg2 d-flex align-items-center justify-content-center">
-              <h2 className="title4">Contacto</h2>
+      
             </div>
           </Col>
           <Col sm={5} className="p-5">

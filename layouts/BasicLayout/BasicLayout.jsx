@@ -13,11 +13,13 @@ export default function BasicLayout(props) {
         <link rel="icon" href="/logo.png" type="image/png" />
       </Head>
       <Header />
+
       <Container fluid className="basic-layout aboutMe">
         <Container fluid className="content m-0">
           {children}
         </Container>
       </Container>
+  
     </>
   );
 }

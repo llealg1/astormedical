@@ -9,7 +9,7 @@ export default function CarouselMain() {
       <Carousel className='carousel-box' interval={4000} >
         {
           arr.map( (act,i) => 
-            <Carousel.Item   key={i} className='fondo '>
+            <Carousel.Item  key={act + i} className='fondo '>
               <Image
               
                 className="d-block w-100 h-80 "
